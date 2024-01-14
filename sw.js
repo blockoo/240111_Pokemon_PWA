@@ -3,7 +3,7 @@ const STATIC_RESOURCES = ["index.html", "app.js", "logo.png"];
 // install the SW
 self.addEventListener("install", async (e) => {
   console.log("SW install");
-
+  //creating new cache
   e.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_DATA);
